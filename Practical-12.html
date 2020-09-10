@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>custom table tamplet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <style>
+    *
+    {
+      padding:0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: Arial,Helvetica,sans-serif;
+    }
+ body
+ {
+   min-width: 100%;
+   background-color: lightgrey;
+ }
+ .wrapper
+ {
+   width: 600px;
+   background-color: #fff;
+   padding: 10px;
+   margin: 20px auto;
+ }
+  .custom-table
+  {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  .basic
+  {
+    background-color: #c1dcb7;
+  }
+  .plus
+  {
+    background-color: #bad6c8;
+  }
+  .deluxe
+  {
+    background-color: #bbd3dc;
+  }
+  .pro
+  {
+    background-color: #d5e4bc;
+  }
+  .custom-table td,.custom-table th
+  {
+    width: 150px;
+    padding: 8px 5px;
+    text-align: center;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+  }
+  .custom-table th
+  {
+    height: 70px;
+    color: #64548f;
+    font-size: 28px;
+  }
+  i
+  {
+    color: #64548f;
+    font-size: 28px;
+    margin-right: 10px;
+  }
+
+    .tick,.cross
+    {
+      width:30px;
+      border-radius: 50%;
+    }
+    tbody tr:nth-child(odd),  tfoot tr:nth-child(odd)
+    {
+      background-color: #edf3e2;
+    }
+    tfoot tr
+    {
+      line-height: 70px;
+    }
+    a
+    {
+      text-decoration:none;
+      background-color: #64548f;
+      padding: 15px 25px;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+    a:hover
+    {
+      background-color: red;
+    }
+    h2
+    {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    tbody tr:first-child td
+    {
+      font-size: 20px;
+      color: green;
+    }
+
+     </style>
+  </head>
+  <body>
+     <div class="wrapper">
+       <h2>Select your plan</h2>
+
+
+
+       <table class="custom-table">
+         <colgroup class="basic"></colgroup>
+          <colgroup class="plus"></colgroup>
+           <colgroup class="deluxe"></colgroup>
+            <colgroup class="pro"></colgroup>
+         <thead>
+           <tr>
+             <th> <i class="fa fa-building"></i>Basic </th>
+             <th><i class="fa fa-superpowers"></i>plus</th>
+             <th><i class="fa fa-telegram"></i>Deluxe</th>
+             <th> <i class="fa fa-tachometer"></i>Pro </th>
+
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>Rs.500/-</td>
+             <td>Rs.1500/-</td>
+             <td>Rs.2500/-</td>
+             <td>Rs.3500/-</td>
+           </tr>
+           <tr>
+             <td>50 pages</td>
+             <td>75 pages</td>
+             <td>unlimited</td>
+             <td>unlimited</td>
+           </tr>
+           <tr>
+             <td>3 users</td>
+             <td>5 users</td>
+             <td>unlimited</td>
+             <td>unlimited</td>
+           </tr>
+           <tr>
+             <td>10 sites</td>
+             <td>50 sites</td>
+             <td>100 sites</td>
+             <td> unlimited</td>
+           </tr>
+           <tr>
+             <td>50 MB</td>
+             <td>250 MB</td>
+             <td>1 GB</td>
+             <td>Unlimited</td>
+           </tr>
+           <tr>
+             <td>included</td>
+             <td>included</td>
+             <td>included</td>
+             <td>included</td>
+           </tr>
+           <tr>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+           </tr>
+           <tr>
+             <td><img class="cross" src="images/cross.jpg" alt=""></td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+           </tr>
+           <tr>
+             <td><img class="cross" src="images/cross.jpg" alt=""></td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+             <td> <img class="tick"src="images/tick.png" alt=""> </td>
+           </tr>
+           <tr>
+              <td><img class="cross" src="images/cross.jpg" alt=""></td>
+               <td><img class="cross" src="images/cross.jpg" alt=""></td>
+               <td> <img class="tick"src="images/tick.png" alt=""> </td>
+               <td> <img class="tick"src="images/tick.png" alt=""> </td>
+           </tr>
+           <tr>
+              <td><img class="cross" src="images/cross.jpg" alt=""></td>
+               <td><img class="cross" src="images/cross.jpg" alt=""></td>
+                <td><img class="cross" src="images/cross.jpg" alt=""></td>
+
+               <td> <img class="tick"src="images/tick.png" alt=""> </td>
+           </tr>
+         </tbody>
+
+            <tfoot>
+              <tr>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+              </tr>
+            </tfoot>
+       </table>
+    </div>
+     </div>
+  </body>
+</html>
